@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUXE — Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✦ Complimentary Shipping on Orders Above $150 &nbsp;·&nbsp; New Summer Collection Now Live ✦</p>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="bar" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <a href="index.html" class="logo-link">
+      <div class="logo-text">LUXE</div>
+      <div class="logo-sub">MAISON DE MODE</div>
+    </a>
+    <div class="header-right">
+      <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+      <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+      <a href="cart.html" class="header-icon cart-icon">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count">3</span>
+      </a>
+    </div>
+    <nav id="navbar">
+      <div class="nav-close" id="close"><i class="fas fa-times"></i></div>
+      <div class="nav-brand">LUXE</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Collections</a></li>
+        <li><a href="blog.html" class="active">Journal</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <p>Follow Us</p>
+        <div class="nav-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="blog-hero">
+    <div class="blog-hero-bg"></div>
+    <div class="blog-hero-overlay"></div>
+    <div class="blog-hero-content">
+      <p class="blog-hero-label">The LUXE Journal</p>
+      <h1 class="blog-hero-title">Style, <em>Culture</em><br>& Craft</h1>
+      <p class="blog-hero-desc">Curated stories from the world of luxury fashion, design, and artisanship</p>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Journal</span>
+      </nav>
+    </div>
+    <div class="blog-hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Blog Category Filter -->
+  <div class="blog-filter-bar">
+    <div class="blog-filter-inner">
+      <button class="blog-filter-btn active" data-cat="all">All</button>
+      <button class="blog-filter-btn" data-cat="style">Style</button>
+      <button class="blog-filter-btn" data-cat="culture">Culture</button>
+      <button class="blog-filter-btn" data-cat="craft">Craft</button>
+      <button class="blog-filter-btn" data-cat="travel">Travel</button>
+      <button class="blog-filter-btn" data-cat="sustainability">Sustainability</button>
+    </div>
+  </div>
+
+  <!-- Featured Post (Hero Article) -->
+  <section class="blog-featured">
+    <div class="featured-card" data-cat="style">
+      <div class="featured-img">
+        <img src="img/blog/b1.jpg" alt="The Art of Dressing Well">
+        <div class="featured-overlay"></div>
+      </div>
+      <div class="featured-content">
+        <div class="post-meta">
+          <span class="post-cat">Style</span>
+          <span class="post-date">
+            <i class="far fa-calendar-alt"></i> 13 January, 2026
+          </span>
+          <span class="post-read">
+            <i class="far fa-clock"></i> 6 min read
+          </span>
+        </div>
+        <h2 class="featured-title">The Art of Dressing Well:<br><em>A Guide to Effortless Luxury</em></h2>
+        <p class="featured-excerpt">True elegance is not about wearing expensive clothes — it is about wearing the right clothes with complete conviction. We explore the principles of dressing well that transcend seasons, trends, and occasion.</p>
+        <a href="#" class="featured-read-btn">
+          Read Article <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="blog-section">
+    <div class="blog-layout">
+
+      <!-- Main Posts -->
+      <div class="blog-posts">
+
+        <!-- Post 1 -->
+        <article class="blog-card" data-cat="craft">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="The Cashmere Chronicles">
+            <span class="blog-card-cat">Craft</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 08 Jan, 2026</span>
+              <span><i class="far fa-clock"></i> 4 min</span>
+            </div>
+            <h3 class="blog-card-title">The Cashmere Chronicles: What Makes a Fibre Truly Exceptional</h3>
+            <p class="blog-card-excerpt">Not all cashmere is created equal. From the high plateaus of Inner Mongolia to the looms of Scotland, we trace the journey of the world's most coveted fibre.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">R</div>
+                <span>Rafael Chen</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card" data-cat="culture">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="Paris Fashion Week">
+            <span class="blog-card-cat">Culture</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 02 Jan, 2026</span>
+              <span><i class="far fa-clock"></i> 7 min</span>
+            </div>
+            <h3 class="blog-card-title">Paris Fashion Week: The Moments That Will Define 2026</h3>
+            <p class="blog-card-excerpt">From the quietly revolutionary to the spectacularly grand, the shows of Paris Fashion Week S/S 2026 told a story of a industry in thoughtful transition.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">I</div>
+                <span>Isabelle Moreau</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card" data-cat="sustainability">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="The Slow Fashion Manifesto">
+            <span class="blog-card-cat">Sustainability</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 27 Dec, 2024</span>
+              <span><i class="far fa-clock"></i> 5 min</span>
+            </div>
+            <h3 class="blog-card-title">The Slow Fashion Manifesto: Why Less Is Always More</h3>
+            <p class="blog-card-excerpt">In a world of fast fashion and endless consumption, we make the case for building a wardrobe of fewer, better pieces — and never looking back.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">S</div>
+                <span>Sofia Nkosi</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-card" data-cat="travel">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="Milan's Hidden Ateliers">
+            <span class="blog-card-cat">Travel</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 19 Dec, 2024</span>
+              <span><i class="far fa-clock"></i> 8 min</span>
+            </div>
+            <h3 class="blog-card-title">Milan's Hidden Ateliers: A Guide to the City's Secret Craft Culture</h3>
+            <p class="blog-card-excerpt">Beyond the flagship boutiques and grand piazzas, Milan conceals a network of extraordinary ateliers where centuries-old craft traditions are quietly kept alive.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">R</div>
+                <span>Rafael Chen</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-card" data-cat="style">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="The Capsule Wardrobe">
+            <span class="blog-card-cat">Style</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 11 Dec, 2024</span>
+              <span><i class="far fa-clock"></i> 5 min</span>
+            </div>
+            <h3 class="blog-card-title">Building the Perfect Capsule Wardrobe for 2026</h3>
+            <p class="blog-card-excerpt">The capsule wardrobe is not a trend — it is a philosophy. We break down the essential pieces that should anchor every considered wardrobe, whatever your personal style.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">I</div>
+                <span>Isabelle Moreau</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-card" data-cat="craft">
+          <div class="blog-card-img">
+            <img src="img/blog/b1.jpg" alt="The Last Shoemakers">
+            <span class="blog-card-cat">Craft</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar-alt"></i> 04 Dec, 2024</span>
+              <span><i class="far fa-clock"></i> 6 min</span>
+            </div>
+            <h3 class="blog-card-title">The Last Shoemakers: Preserving Goodyear Welt in a Disposable World</h3>
+            <p class="blog-card-excerpt">In a small workshop in Northampton, a family of cobblers continues to produce shoes the old way — by hand, with patience, for those who still value permanence.</p>
+            <div class="blog-card-footer">
+              <div class="blog-author">
+                <div class="author-avatar">S</div>
+                <span>Sofia Nkosi</span>
+              </div>
+              <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /blog-posts -->
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+
+        <!-- Search -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Search</h4>
+          <div class="blog-search-wrap">
+            <input type="text" placeholder="Search articles...">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Categories</h4>
+          <ul class="widget-cats">
+            <li><a href="#">Style <span>12</span></a></li>
+            <li><a href="#">Culture <span>8</span></a></li>
+            <li><a href="#">Craft <span>10</span></a></li>
+            <li><a href="#">Travel <span>5</span></a></li>
+            <li><a href="#">Sustainability <span>7</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Posts -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Popular Articles</h4>
+          <div class="popular-posts">
+            <a href="#" class="popular-post">
+              <div class="popular-post-img">
+                <img src="img/blog/b1.jpg" alt="">
+              </div>
+              <div class="popular-post-info">
+                <h6>The Art of Dressing Well</h6>
+                <span><i class="far fa-calendar-alt"></i> 13 Jan, 2026</span>
+              </div>
+            </a>
+            <a href="#" class="popular-post">
+              <div class="popular-post-img">
+                <img src="img/blog/b1.jpg" alt="">
+              </div>
+              <div class="popular-post-info">
+                <h6>Paris Fashion Week 2026</h6>
+                <span><i class="far fa-calendar-alt"></i> 02 Jan, 2026</span>
+              </div>
+            </a>
+            <a href="#" class="popular-post">
+              <div class="popular-post-img">
+                <img src="img/blog/b1.jpg" alt="">
+              </div>
+              <div class="popular-post-info">
+                <h6>The Slow Fashion Manifesto</h6>
+                <span><i class="far fa-calendar-alt"></i> 27 Dec, 2024</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Tags</h4>
+          <div class="widget-tags">
+            <a href="#">Cashmere</a>
+            <a href="#">Linen</a>
+            <a href="#">Tailoring</a>
+            <a href="#">Paris</a>
+            <a href="#">Milan</a>
+            <a href="#">Slow Fashion</a>
+            <a href="#">Capsule</a>
+            <a href="#">Artisan</a>
+            <a href="#">Leather</a>
+            <a href="#">Heritage</a>
+          </div>
+        </div>
+
+        <!-- Follow -->
+        <div class="sidebar-widget sidebar-follow">
+          <h4 class="widget-title">Follow LUXE</h4>
+          <div class="widget-social">
+            <a href="#" class="social-link ig">
+              <i class="fab fa-instagram"></i>
+              <div><strong>Instagram</strong><span>@luxe.maison</span></div>
+            </a>
+            <a href="#" class="social-link pi">
+              <i class="fab fa-pinterest-p"></i>
+              <div><strong>Pinterest</strong><span>LUXE Maison</span></div>
+            </a>
+          </div>
+        </div>
+
+      </aside>
+    </div><!-- /blog-layout -->
+
+    <!-- Pagination -->
+    <div class="blog-pagination">
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <span class="page-ellipsis">···</span>
+      <button class="page-btn">6</button>
+      <button class="page-btn page-next">Next <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <p class="section-overline">Stay in the Loop</p>
+        <h2>The LUXE <em>Insider</em></h2>
+        <p class="nl-desc">Join our curated list for exclusive early access, private sales, and style insights delivered weekly.</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="nl-input-wrap">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn-primary">Subscribe</button>
+        </div>
+        <p class="nl-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LUXE</div>
+        <p>Maison de Mode — Where craftsmanship meets contemporary luxury.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="footer-links">
+        <h4>Customer Care</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Size Guide</a>
+      </div>
+      <div class="footer-links">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-app">
+        <h4>Get the App</h4>
+        <p>Exclusive app-only offers</p>
+        <div class="app-badges">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="img/pay/play.jpg" alt="Google Play">
+        </div>
+        <div class="footer-payment">
+          <p>Secure Payment</p>
+          <img src="img/pay/pay.png" alt="Payment methods">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 LUXE Maison de Mode. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+
+  <script src="js/blog.js"></script>
+</body>
+</html>

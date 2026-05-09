@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUXE — Your Bag</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✦ Complimentary Shipping on Orders Above $150 &nbsp;·&nbsp; New Summer Collection Now Live ✦</p>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="bar" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <a href="index.html" class="logo-link">
+      <div class="logo-text">LUXE</div>
+      <div class="logo-sub">MAISON DE MODE</div>
+    </a>
+    <div class="header-right">
+      <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+      <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+      <a href="cart.html" class="header-icon cart-icon active-page">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count" id="cartBadge">3</span>
+      </a>
+    </div>
+    <nav id="navbar">
+      <div class="nav-close" id="close"><i class="fas fa-times"></i></div>
+      <div class="nav-brand">LUXE</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Collections</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <p>Follow Us</p>
+        <div class="nav-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="cart-hero">
+    <div class="cart-hero-bg"></div>
+    <div class="cart-hero-overlay"></div>
+    <div class="cart-hero-content">
+      <p class="cart-hero-label">Shopping Bag</p>
+      <h1 class="cart-hero-title">Your <em>Selections</em></h1>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="shop.html">Collections</a>
+        <span>/</span>
+        <span>Your Bag</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Progress Steps -->
+  <div class="checkout-steps">
+    <div class="step active">
+      <div class="step-circle">1</div>
+      <span>Your Bag</span>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-circle">2</div>
+      <span>Shipping</span>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-circle">3</div>
+      <span>Payment</span>
+    </div>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-circle">4</div>
+      <span>Confirm</span>
+    </div>
+  </div>
+
+  <!-- Cart Body -->
+  <div class="cart-wrapper">
+
+    <!-- Cart Items -->
+    <div class="cart-main">
+
+      <!-- Cart Header -->
+      <div class="cart-table-head">
+        <span class="col-product">Product</span>
+        <span class="col-price">Price</span>
+        <span class="col-qty">Quantity</span>
+        <span class="col-subtotal">Subtotal</span>
+        <span class="col-remove"></span>
+      </div>
+
+      <!-- Cart Items List -->
+      <div class="cart-items" id="cartItems">
+
+        <!-- Item 1 -->
+        <div class="cart-item" data-id="1" data-price="148">
+          <div class="cart-item-product">
+            <div class="cart-item-img">
+              <img src="img/products/f1.jpg" alt="Tailored Linen Shirt">
+            </div>
+            <div class="cart-item-details">
+              <span class="cart-item-brand">Maison Luxe</span>
+              <h5 class="cart-item-name">Tailored Linen Shirt</h5>
+              <div class="cart-item-meta">
+                <span>Size: <strong>M</strong></span>
+                <span>Colour: <strong>Cream</strong></span>
+              </div>
+              <button class="cart-item-wishlist"><i class="far fa-heart"></i> Save for later</button>
+            </div>
+          </div>
+          <div class="cart-item-price" data-label="Price">$148.00</div>
+          <div class="cart-item-qty" data-label="Quantity">
+            <div class="qty-box">
+              <button class="qty-minus">−</button>
+              <input type="number" class="qty-input" value="1" min="1" max="99">
+              <button class="qty-plus">+</button>
+            </div>
+          </div>
+          <div class="cart-item-subtotal" data-label="Subtotal">$148.00</div>
+          <div class="cart-item-remove">
+            <button class="remove-btn" title="Remove item"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item" data-id="2" data-price="189">
+          <div class="cart-item-product">
+            <div class="cart-item-img">
+              <img src="img/products/f3.jpg" alt="Draped Midi Dress">
+            </div>
+            <div class="cart-item-details">
+              <span class="cart-item-brand">Maison Luxe</span>
+              <h5 class="cart-item-name">Draped Midi Dress</h5>
+              <div class="cart-item-meta">
+                <span>Size: <strong>S</strong></span>
+                <span>Colour: <strong>Slate</strong></span>
+              </div>
+              <button class="cart-item-wishlist"><i class="far fa-heart"></i> Save for later</button>
+            </div>
+          </div>
+          <div class="cart-item-price" data-label="Price">$189.00</div>
+          <div class="cart-item-qty" data-label="Quantity">
+            <div class="qty-box">
+              <button class="qty-minus">−</button>
+              <input type="number" class="qty-input" value="1" min="1" max="99">
+              <button class="qty-plus">+</button>
+            </div>
+          </div>
+          <div class="cart-item-subtotal" data-label="Subtotal">$189.00</div>
+          <div class="cart-item-remove">
+            <button class="remove-btn" title="Remove item"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart-item" data-id="3" data-price="89">
+          <div class="cart-item-product">
+            <div class="cart-item-img">
+              <img src="img/products/f5.jpg" alt="Full-Grain Leather Belt">
+            </div>
+            <div class="cart-item-details">
+              <span class="cart-item-brand">Artisan</span>
+              <h5 class="cart-item-name">Full-Grain Leather Belt</h5>
+              <div class="cart-item-meta">
+                <span>Size: <strong>One Size</strong></span>
+                <span>Colour: <strong>Camel</strong></span>
+              </div>
+              <button class="cart-item-wishlist"><i class="far fa-heart"></i> Save for later</button>
+            </div>
+          </div>
+          <div class="cart-item-price" data-label="Price">$89.00</div>
+          <div class="cart-item-qty" data-label="Quantity">
+            <div class="qty-box">
+              <button class="qty-minus">−</button>
+              <input type="number" class="qty-input" value="1" min="1" max="99">
+              <button class="qty-plus">+</button>
+            </div>
+          </div>
+          <div class="cart-item-subtotal" data-label="Subtotal">$89.00</div>
+          <div class="cart-item-remove">
+            <button class="remove-btn" title="Remove item"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+      </div><!-- /cart-items -->
+
+      <!-- Empty Cart State (hidden by default) -->
+      <div class="cart-empty" id="cartEmpty" style="display:none">
+        <div class="cart-empty-icon"><i class="fas fa-shopping-bag"></i></div>
+        <h3>Your bag is empty</h3>
+        <p>Looks like you haven't added anything to your bag yet.</p>
+        <a href="shop.html" class="btn-primary">Continue Shopping</a>
+      </div>
+
+      <!-- Cart Actions -->
+      <div class="cart-actions" id="cartActions">
+        <a href="shop.html" class="btn-continue">
+          <i class="fas fa-arrow-left"></i> Continue Shopping
+        </a>
+        <button class="btn-update" id="updateCart">Update Bag</button>
+      </div>
+
+      <!-- Coupon -->
+      <div class="coupon-wrap" id="couponWrap">
+        <div class="coupon-inner">
+          <i class="fas fa-tag coupon-icon"></i>
+          <div class="coupon-input-wrap">
+            <input type="text" id="couponInput" placeholder="Enter coupon code">
+            <button class="coupon-apply-btn" id="couponApply">Apply</button>
+          </div>
+        </div>
+        <p class="coupon-hint">Try <strong>LUXE20</strong> for 20% off your first order</p>
+        <div class="coupon-success" id="couponSuccess" style="display:none">
+          <i class="fas fa-check-circle"></i>
+          Coupon <strong id="appliedCode"></strong> applied — <span id="discountText"></span> off!
+          <button class="coupon-remove-btn" id="couponRemove">Remove</button>
+        </div>
+      </div>
+
+    </div><!-- /cart-main -->
+
+    <!-- Order Summary -->
+    <aside class="cart-summary">
+      <h3 class="summary-title">Order Summary</h3>
+
+      <div class="summary-lines">
+        <div class="summary-line">
+          <span>Subtotal (<span id="itemCount">3</span> items)</span>
+          <span id="summarySubtotal">$426.00</span>
+        </div>
+        <div class="summary-line discount-line" id="discountLine" style="display:none">
+          <span>Discount</span>
+          <span id="summaryDiscount" class="discount-val">−$0.00</span>
+        </div>
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span id="summaryShipping" class="shipping-free">Free</span>
+        </div>
+        <div class="summary-line">
+          <span>Estimated Tax</span>
+          <span id="summaryTax">$42.60</span>
+        </div>
+      </div>
+
+      <div class="summary-divider"></div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <span id="summaryTotal">$468.60</span>
+      </div>
+
+      <!-- Shipping Info -->
+      <div class="shipping-info">
+        <i class="fas fa-shipping-fast"></i>
+        <p>Free standard shipping on this order</p>
+      </div>
+
+      <!-- Checkout Button -->
+      <button class="checkout-btn" id="checkoutBtn">
+        Proceed to Checkout
+        <i class="fas fa-arrow-right"></i>
+      </button>
+
+      <!-- Payment Icons -->
+      <div class="payment-methods">
+        <p class="payment-label">We accept</p>
+        <div class="payment-icons">
+          <img src="img/pay/pay.png" alt="Payment methods">
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-badges">
+        <div class="trust-item">
+          <i class="fas fa-lock"></i>
+          <span>Secure Checkout</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-undo-alt"></i>
+          <span>Free Returns</span>
+        </div>
+      </div>
+    </aside>
+
+  </div><!-- /cart-wrapper -->
+
+  <!-- You May Also Like -->
+  <section class="cart-related">
+    <div class="section-header">
+      <p class="section-overline">Complete the Look</p>
+      <h2 class="section-title">You May <em>Also Like</em></h2>
+    </div>
+    <div class="related-grid">
+      <div class="shop-card" style="opacity:1;transform:none">
+        <div class="shop-card-img">
+          <img src="img/products/f2.jpg" alt="Cashmere Polo">
+          <div class="shop-card-actions">
+            <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="shop-badge">Bestseller</div>
+        </div>
+        <div class="shop-card-info">
+          <span class="shop-brand">Atelier Co.</span>
+          <h5 class="shop-name">Cashmere Polo</h5>
+          <div class="shop-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>(84)</span>
+          </div>
+          <div class="shop-footer">
+            <span class="shop-price">$220</span>
+            <button class="add-to-cart-related"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card" style="opacity:1;transform:none">
+        <div class="shop-card-img">
+          <img src="img/products/f4.jpg" alt="Pure Silk Blouse">
+          <div class="shop-card-actions">
+            <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        <div class="shop-card-info">
+          <span class="shop-brand">Maison Luxe</span>
+          <h5 class="shop-name">Pure Silk Blouse</h5>
+          <div class="shop-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span>(56)</span>
+          </div>
+          <div class="shop-footer">
+            <span class="shop-price">$198</span>
+            <button class="add-to-cart-related"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card" style="opacity:1;transform:none">
+        <div class="shop-card-img">
+          <img src="img/products/f6.jpg" alt="Structured Blazer">
+          <div class="shop-card-actions">
+            <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="shop-badge sale">−30%</div>
+        </div>
+        <div class="shop-card-info">
+          <span class="shop-brand">Atelier Co.</span>
+          <h5 class="shop-name">Structured Blazer</h5>
+          <div class="shop-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>(312)</span>
+          </div>
+          <div class="shop-footer">
+            <span class="shop-price">$275 <del>$395</del></span>
+            <button class="add-to-cart-related"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card" style="opacity:1;transform:none">
+        <div class="shop-card-img">
+          <img src="img/products/n3.jpg" alt="Woven Leather Tote">
+          <div class="shop-card-actions">
+            <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="shop-badge">New</div>
+        </div>
+        <div class="shop-card-info">
+          <span class="shop-brand">Artisan</span>
+          <h5 class="shop-name">Woven Leather Tote</h5>
+          <div class="shop-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span>(88)</span>
+          </div>
+          <div class="shop-footer">
+            <span class="shop-price">$310</span>
+            <button class="add-to-cart-related"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <p class="section-overline">Stay in the Loop</p>
+        <h2>The LUXE <em>Insider</em></h2>
+        <p class="nl-desc">Join our curated list for exclusive early access, private sales, and style insights.</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="nl-input-wrap">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn-primary">Subscribe</button>
+        </div>
+        <p class="nl-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LUXE</div>
+        <p>Maison de Mode — Where craftsmanship meets contemporary luxury.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="footer-links">
+        <h4>Customer Care</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Size Guide</a>
+      </div>
+      <div class="footer-links">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-app">
+        <h4>Get the App</h4>
+        <p>Exclusive app-only offers</p>
+        <div class="app-badges">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="img/pay/play.jpg" alt="Google Play">
+        </div>
+        <div class="footer-payment">
+          <p>Secure Payment</p>
+          <img src="img/pay/pay.png" alt="Payment methods">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LUXE Maison de Mode. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span>Item added to your bag</span>
+  </div>
+
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

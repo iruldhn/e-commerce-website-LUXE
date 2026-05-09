@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUXE — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✦ Complimentary Shipping on Orders Above $150 &nbsp;·&nbsp; New Summer Collection Now Live ✦</p>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="bar" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <a href="index.html" class="logo-link">
+      <div class="logo-text">LUXE</div>
+      <div class="logo-sub">MAISON DE MODE</div>
+    </a>
+    <div class="header-right">
+      <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+      <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+      <a href="cart.html" class="header-icon cart-icon">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count">3</span>
+      </a>
+    </div>
+    <nav id="navbar">
+      <div class="nav-close" id="close"><i class="fas fa-times"></i></div>
+      <div class="nav-brand">LUXE</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Collections</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <p>Follow Us</p>
+        <div class="nav-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg"></div>
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-content">
+      <p class="contact-hero-label">Get in Touch</p>
+      <h1 class="contact-hero-title">We'd Love to<br><em>Hear From You</em></h1>
+      <p class="contact-hero-desc">Our concierge team is here to assist you with anything you need</p>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+    <div class="contact-hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="contact-info-strip">
+    <div class="info-card">
+      <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="info-body">
+        <h5>Visit Our Maison</h5>
+        <p>12 Rue du Faubourg Saint-Honoré<br>Paris, 75008, France</p>
+      </div>
+    </div>
+    <div class="info-divider"></div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fas fa-envelope"></i></div>
+      <div class="info-body">
+        <h5>Write to Us</h5>
+        <p><a href="mailto:concierge@luxe.com">concierge@luxe.com</a><br><a href="mailto:press@luxe.com">press@luxe.com</a></p>
+      </div>
+    </div>
+    <div class="info-divider"></div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+      <div class="info-body">
+        <h5>Call Us</h5>
+        <p><a href="tel:+33123456789">+33 1 23 45 67 89</a><br>Mon–Fri, 9am–6pm CET</p>
+      </div>
+    </div>
+    <div class="info-divider"></div>
+    <div class="info-card">
+      <div class="info-icon"><i class="fas fa-clock"></i></div>
+      <div class="info-body">
+        <h5>Opening Hours</h5>
+        <p>Monday – Friday: 9:00–18:00<br>Saturday: 10:00–16:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="contact-main">
+
+    <!-- Contact Form -->
+    <div class="contact-form-wrap">
+      <div class="form-header">
+        <p class="section-overline">Send a Message</p>
+        <h2 class="section-title">Leave Us a <em>Note</em></h2>
+        <p class="form-subtext">Whether it's a question about an order, a bespoke enquiry, or simply a desire to say hello — we read every message personally.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="firstName" name="firstName" placeholder="Isabelle" autocomplete="given-name">
+            <span class="field-error" id="firstNameErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Moreau" autocomplete="family-name">
+            <span class="field-error" id="lastNameErr"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="isabelle@example.com" autocomplete="email">
+            <span class="field-error" id="emailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="order">Order Enquiry</option>
+              <option value="bespoke">Bespoke / Personal Shopping</option>
+              <option value="return">Returns & Exchanges</option>
+              <option value="press">Press & Partnerships</option>
+              <option value="other">Other</option>
+            </select>
+            <i class="fas fa-chevron-down select-icon"></i>
+          </div>
+          <span class="field-error" id="subjectErr"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message <span class="req">*</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you…"></textarea>
+          <div class="char-count"><span id="charCount">0</span> / 500</div>
+          <span class="field-error" id="messageErr"></span>
+        </div>
+
+        <div class="form-group form-checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox" id="consent" name="consent">
+            <span class="custom-checkbox"></span>
+            I agree to the <a href="#">Privacy Policy</a> and consent to being contacted
+          </label>
+          <span class="field-error" id="consentErr"></span>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <i class="fas fa-arrow-right btn-icon"></i>
+          <span class="btn-loader" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+        </button>
+
+        <!-- Success Message -->
+        <div class="form-success" id="formSuccess" style="display:none">
+          <i class="fas fa-check-circle"></i>
+          <div>
+            <strong>Message sent successfully!</strong>
+            <p>Thank you for reaching out. Our team will respond within 24 hours.</p>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Sidebar Info -->
+    <aside class="contact-aside">
+
+      <!-- Map -->
+      <div class="contact-map">
+        <div class="map-header">
+          <p class="section-overline">Find Us</p>
+          <h3 class="map-title">Our <em>Location</em></h3>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79028.82705994546!2d-1.316122463070348!3d51.75770789023402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sin!4v1665512781798!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="LUXE Location">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Team Concierge -->
+      <div class="contact-team">
+        <p class="section-overline">Your Concierge Team</p>
+        <h3 class="team-title">Personal <em>Advisors</em></h3>
+        <div class="advisor-list">
+          <div class="advisor-card">
+            <div class="advisor-img">
+              <img src="img/people/1.png" alt="Isabelle Moreau">
+            </div>
+            <div class="advisor-info">
+              <strong>Isabelle Moreau</strong>
+              <span>Senior Style Advisor</span>
+              <a href="tel:+911234567890"><i class="fas fa-phone-alt"></i> +91 12 345 67890</a>
+              <a href="mailto:isabelle@luxe.com"><i class="fas fa-envelope"></i> isabelle@luxe.com</a>
+            </div>
+          </div>
+          <div class="advisor-card">
+            <div class="advisor-img">
+              <img src="img/people/2.png" alt="Rafael Chen">
+            </div>
+            <div class="advisor-info">
+              <strong>Rafael Chen</strong>
+              <span>Personal Shopping Director</span>
+              <a href="tel:+911234567890"><i class="fas fa-phone-alt"></i> +91 12 345 67890</a>
+              <a href="mailto:rafael@luxe.com"><i class="fas fa-envelope"></i> rafael@luxe.com</a>
+            </div>
+          </div>
+          <div class="advisor-card">
+            <div class="advisor-img">
+              <img src="img/people/3.png" alt="Sofia Nkosi">
+            </div>
+            <div class="advisor-info">
+              <strong>Sofia Nkosi</strong>
+              <span>Client Experience Director</span>
+              <a href="tel:+911234567890"><i class="fas fa-phone-alt"></i> +91 12 345 67890</a>
+              <a href="mailto:sofia@luxe.com"><i class="fas fa-envelope"></i> sofia@luxe.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Quick Links -->
+      <div class="contact-faq">
+        <p class="section-overline">Quick Answers</p>
+        <h3 class="faq-title">Common <em>Questions</em></h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">
+              How long does shipping take?
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a">
+              <p>Standard shipping takes 3–5 business days. Express shipping (1–2 days) is available at checkout. All orders over $150 qualify for complimentary standard shipping.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              What is your return policy?
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a">
+              <p>We offer a 30-day return window on all unworn, unwashed items with original tags attached. Simply contact our team and we will arrange a complimentary collection.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Do you offer bespoke services?
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a">
+              <p>Yes. Our personal shopping service is available for clients seeking a curated, one-to-one experience. Contact your dedicated advisor to arrange a private consultation.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              How can I track my order?
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a">
+              <p>Once your order ships, you will receive a tracking link via email. You can also check your order status by logging into your LUXE account at any time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <p class="section-overline">Stay in the Loop</p>
+        <h2>The LUXE <em>Insider</em></h2>
+        <p class="nl-desc">Join our curated list for exclusive early access, private sales, and style insights.</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="nl-input-wrap">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn-primary">Subscribe</button>
+        </div>
+        <p class="nl-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LUXE</div>
+        <p>Maison de Mode — Where craftsmanship meets contemporary luxury.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="footer-links">
+        <h4>Customer Care</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Size Guide</a>
+      </div>
+      <div class="footer-links">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-app">
+        <h4>Get the App</h4>
+        <p>Exclusive app-only offers</p>
+        <div class="app-badges">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="img/pay/play.jpg" alt="Google Play">
+        </div>
+        <div class="footer-payment">
+          <p>Secure Payment</p>
+          <img src="img/pay/pay.png" alt="Payment methods">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 LUXE Maison de Mode. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

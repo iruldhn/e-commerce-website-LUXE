@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUXE — Collections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✦ Complimentary Shipping on Orders Above $150 &nbsp;·&nbsp; New Summer Collection Now Live ✦</p>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="bar" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <a href="index.html" class="logo-link">
+      <div class="logo-text">LUXE</div>
+      <div class="logo-sub">MAISON DE MODE</div>
+    </a>
+
+    <div class="header-right">
+      <a href="#" class="header-icon" aria-label="Search"><i class="fas fa-search"></i></a>
+      <a href="#" class="header-icon" aria-label="Wishlist"><i class="far fa-heart"></i></a>
+      <a href="cart.html" class="header-icon cart-icon" aria-label="Cart">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count">3</span>
+      </a>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <nav id="navbar">
+      <div class="nav-close" id="close"><i class="fas fa-times"></i></div>
+      <div class="nav-brand">LUXE</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Collections</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <p>Follow Us</p>
+        <div class="nav-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="shop-hero">
+    <div class="shop-hero-bg"></div>
+    <div class="shop-hero-overlay"></div>
+    <div class="shop-hero-content">
+      <p class="shop-hero-label">Discover</p>
+      <h1 class="shop-hero-title">The <em>Collection</em></h1>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Collections</span>
+      </nav>
+    </div>
+    <div class="shop-hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Shop Body -->
+  <div class="shop-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="shop-sidebar" id="shopSidebar">
+      <div class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></div>
+
+      <!-- Category Filter -->
+      <div class="sidebar-block">
+        <h4 class="sidebar-title">Category</h4>
+        <ul class="filter-list">
+          <li><label class="filter-label active" data-filter="all">
+            <span class="filter-radio"></span> All Items <span class="filter-count">48</span>
+          </label></li>
+          <li><label class="filter-label" data-filter="women">
+            <span class="filter-radio"></span> Women <span class="filter-count">18</span>
+          </label></li>
+          <li><label class="filter-label" data-filter="men">
+            <span class="filter-radio"></span> Men <span class="filter-count">14</span>
+          </label></li>
+          <li><label class="filter-label" data-filter="accessories">
+            <span class="filter-radio"></span> Accessories <span class="filter-count">10</span>
+          </label></li>
+          <li><label class="filter-label" data-filter="new">
+            <span class="filter-radio"></span> New Arrivals <span class="filter-count">6</span>
+          </label></li>
+        </ul>
+      </div>
+
+      <!-- Price Range -->
+      <div class="sidebar-block">
+        <h4 class="sidebar-title">Price Range</h4>
+        <div class="price-range-wrap">
+          <input type="range" class="price-range" id="priceRange" min="0" max="600" value="600">
+          <div class="price-display">
+            <span>$0</span>
+            <span id="priceVal">$600</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Filter -->
+      <div class="sidebar-block">
+        <h4 class="sidebar-title">Brand</h4>
+        <ul class="filter-list">
+          <li><label class="filter-checkbox">
+            <input type="checkbox" checked> <span>Maison Luxe</span>
+          </label></li>
+          <li><label class="filter-checkbox">
+            <input type="checkbox" checked> <span>Atelier Co.</span>
+          </label></li>
+          <li><label class="filter-checkbox">
+            <input type="checkbox" checked> <span>Artisan</span>
+          </label></li>
+          <li><label class="filter-checkbox">
+            <input type="checkbox"> <span>Noir Studio</span>
+          </label></li>
+        </ul>
+      </div>
+
+      <!-- Color Filter -->
+      <div class="sidebar-block">
+        <h4 class="sidebar-title">Colour</h4>
+        <div class="color-swatches">
+          <button class="swatch active" style="background:#1a1a1a" title="Black"></button>
+          <button class="swatch" style="background:#c0a882" title="Beige"></button>
+          <button class="swatch" style="background:#8b6b4a" title="Camel"></button>
+          <button class="swatch" style="background:#4a5568" title="Slate"></button>
+          <button class="swatch" style="background:#c9a96e" title="Gold"></button>
+          <button class="swatch" style="background:#f0ece5" title="Cream"></button>
+          <button class="swatch" style="background:#6b4c3b" title="Chocolate"></button>
+          <button class="swatch" style="background:#2d4a3e" title="Forest"></button>
+        </div>
+      </div>
+
+      <!-- Size Filter -->
+      <div class="sidebar-block">
+        <h4 class="sidebar-title">Size</h4>
+        <div class="size-grid">
+          <button class="size-btn">XS</button>
+          <button class="size-btn active">S</button>
+          <button class="size-btn active">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+          <button class="size-btn">XXL</button>
+        </div>
+      </div>
+
+      <button class="apply-filters-btn">Apply Filters</button>
+    </aside>
+
+    <!-- Sidebar Mobile Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="shop-main">
+
+      <!-- Toolbar -->
+      <div class="shop-toolbar">
+        <div class="toolbar-left">
+          <button class="filter-toggle-btn" id="filterToggle">
+            <i class="fas fa-sliders-h"></i> Filter
+          </button>
+          <span class="result-count">Showing <strong>16</strong> of 48 products</span>
+        </div>
+        <div class="toolbar-right">
+          <div class="view-toggle">
+            <button class="view-btn active" id="gridView" title="Grid View"><i class="fas fa-th"></i></button>
+            <button class="view-btn" id="listView" title="List View"><i class="fas fa-list"></i></button>
+          </div>
+          <div class="sort-wrap">
+            <select class="sort-select" id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest First</option>
+              <option value="rating">Best Rating</option>
+            </select>
+            <i class="fas fa-chevron-down sort-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Filters -->
+      <div class="active-filters" id="activeFilters">
+        <span class="filter-tag">All Categories <button class="tag-remove">×</button></span>
+        <span class="filter-tag">Size: S, M <button class="tag-remove">×</button></span>
+        <button class="clear-all">Clear All</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="shop-grid" id="shopGrid">
+
+        <!-- Product 1 -->
+        <div class="shop-card" data-category="women" data-price="148" data-rating="4.5">
+          <div class="shop-card-img">
+            <img src="img/products/f1.jpg" alt="Tailored Linen Shirt">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" title="Quick View" data-id="1"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">New</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Tailored Linen Shirt</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(128)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$148</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="shop-card" data-category="men" data-price="220" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/f2.jpg" alt="Cashmere Polo">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="2"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge sale">Sale</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Cashmere Polo</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(84)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$220 <del>$340</del></span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="shop-card" data-category="women" data-price="198" data-rating="4">
+          <div class="shop-card-img">
+            <img src="img/products/f3.jpg" alt="Pure Silk Blouse">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="3"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Pure Silk Blouse</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(56)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$198</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="shop-card" data-category="accessories" data-price="89" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/f4.jpg" alt="Full-Grain Leather Belt">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="4"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">Exclusive</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Artisan</span>
+            <h5 class="shop-name">Full-Grain Leather Belt</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(203)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$89</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="shop-card" data-category="men" data-price="265" data-rating="4.5">
+          <div class="shop-card-img">
+            <img src="img/products/f5.jpg" alt="Slim Wool Trousers">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="5"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Slim Wool Trousers</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(91)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$265</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="shop-card" data-category="women" data-price="189" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/f6.jpg" alt="Draped Midi Dress">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="6"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge sale">−30%</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Draped Midi Dress</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(177)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$189 <del>$270</del></span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="shop-card" data-category="accessories" data-price="120" data-rating="4">
+          <div class="shop-card-img">
+            <img src="img/products/f7.jpg" alt="Cashmere Scarf">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="7"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Artisan</span>
+            <h5 class="shop-name">Cashmere Scarf</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(44)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$120</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="shop-card" data-category="men" data-price="395" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/f8.jpg" alt="Structured Blazer">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="8"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">Bestseller</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Structured Blazer</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(312)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$395</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="shop-card" data-category="new" data-price="420" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/n1.jpg" alt="Crepe Evening Gown">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="9"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">New</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Crepe Evening Gown</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(29)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$420</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="shop-card" data-category="new" data-price="165" data-rating="4.5">
+          <div class="shop-card-img">
+            <img src="img/products/n2.jpg" alt="Heritage Oxford Shirt">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="10"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">New</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Heritage Oxford Shirt</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(61)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$165</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="shop-card" data-category="accessories" data-price="310" data-rating="4.5">
+          <div class="shop-card-img">
+            <img src="img/products/n3.jpg" alt="Woven Leather Tote">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="11"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Artisan</span>
+            <h5 class="shop-name">Woven Leather Tote</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(88)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$310</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="shop-card" data-category="women" data-price="138" data-rating="4">
+          <div class="shop-card-img">
+            <img src="img/products/n4.jpg" alt="Asymmetric Knit Top">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="12"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Asymmetric Knit Top</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(73)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$138</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="shop-card" data-category="men" data-price="245" data-rating="4.5">
+          <div class="shop-card-img">
+            <img src="img/products/n5.jpg" alt="Merino Cardigan">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="13"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Merino Cardigan</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span>(110)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$245</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="shop-card" data-category="new" data-price="480" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/n6.jpg" alt="Suede Chelsea Boots">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="14"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge">New</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Artisan</span>
+            <h5 class="shop-name">Suede Chelsea Boots</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(52)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$480</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="shop-card" data-category="women" data-price="320" data-rating="5">
+          <div class="shop-card-img">
+            <img src="img/products/n7.jpg" alt="Wrap Coat">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="15"><i class="far fa-eye"></i></button>
+            </div>
+            <div class="shop-badge sale">Sale</div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Maison Luxe</span>
+            <h5 class="shop-name">Classic Wrap Coat</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(214)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$320 <del>$450</del></span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="shop-card" data-category="men" data-price="175" data-rating="4">
+          <div class="shop-card-img">
+            <img src="img/products/n8.jpg" alt="Linen Trousers">
+            <div class="shop-card-actions">
+              <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+              <button class="action-btn quickview-btn" data-id="16"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="shop-card-info">
+            <span class="shop-brand">Atelier Co.</span>
+            <h5 class="shop-name">Relaxed Linen Trousers</h5>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              <span>(97)</span>
+            </div>
+            <div class="shop-footer">
+              <span class="shop-price">$175</span>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /shop-grid -->
+
+      <!-- Pagination -->
+      <div class="shop-pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="page-ellipsis">···</span>
+        <button class="page-btn">8</button>
+        <button class="page-btn page-next">Next <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+    </main>
+  </div><!-- /shop-wrapper -->
+
+  <!-- Quick View Modal -->
+  <div class="quickview-modal" id="quickviewModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-grid">
+        <div class="modal-img">
+          <img src="img/products/f1.jpg" alt="" id="modalImg">
+        </div>
+        <div class="modal-details">
+          <span class="modal-brand" id="modalBrand">Maison Luxe</span>
+          <h2 class="modal-title" id="modalTitle">Tailored Linen Shirt</h2>
+          <div class="modal-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span>(128 reviews)</span>
+          </div>
+          <div class="modal-price" id="modalPrice">$148</div>
+          <p class="modal-desc">Crafted from the finest European linen, this tailored shirt embodies effortless luxury. Relaxed yet refined, it transitions seamlessly from day to evening.</p>
+          <div class="modal-sizes">
+            <p class="modal-label">Select Size</p>
+            <div class="size-grid">
+              <button class="size-btn">XS</button>
+              <button class="size-btn active">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+            </div>
+          </div>
+          <div class="modal-qty">
+            <p class="modal-label">Quantity</p>
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus">−</button>
+              <span class="qty-val" id="qtyVal">1</span>
+              <button class="qty-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-primary modal-add-cart">Add to Bag</button>
+            <button class="modal-wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <a href="sproduct.html" class="modal-full-link">View Full Details →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <p class="section-overline">Stay in the Loop</p>
+        <h2>The LUXE <em>Insider</em></h2>
+        <p class="nl-desc">Join our curated list for exclusive early access, private sales, and style insights.</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="nl-input-wrap">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn-primary">Subscribe</button>
+        </div>
+        <p class="nl-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LUXE</div>
+        <p>Maison de Mode — Where craftsmanship meets contemporary luxury.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="footer-links">
+        <h4>Customer Care</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Size Guide</a>
+      </div>
+      <div class="footer-links">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-app">
+        <h4>Get the App</h4>
+        <p>Exclusive app-only offers</p>
+        <div class="app-badges">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="img/pay/play.jpg" alt="Google Play">
+        </div>
+        <div class="footer-payment">
+          <p>Secure Payment</p>
+          <img src="img/pay/pay.png" alt="Payment methods">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LUXE Maison de Mode. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span>Item added to your bag</span>
+  </div>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>
